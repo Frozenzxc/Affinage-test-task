@@ -1,0 +1,40 @@
+.btn-more {
+  display: block;
+  max-width: 120px;
+  position: relative;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600;
+  color: $font-black;
+  border-bottom: 2px solid $bg-black;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.btn-more::before,
+.btn-more::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: $bg-black;
+}
+
+.btn-more::before {
+  bottom: 1px;
+  right: -2px;
+  transform: rotate(45deg);
+}
+
+.btn-more::after {
+  bottom: -5px;
+  right: -2px;
+  transform: rotate(-45deg);
+}

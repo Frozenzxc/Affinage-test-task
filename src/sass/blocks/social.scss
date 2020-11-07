@@ -1,0 +1,39 @@
+.social {
+  @include list-reset();
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  border: 0.5px solid #BFBFBF;
+  width: 30%;
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.social__link {
+  min-height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: $bg-black;
+}
+
+.social__likes {
+  margin-left: 12px;
+  font-size: 11px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #848484;
+}

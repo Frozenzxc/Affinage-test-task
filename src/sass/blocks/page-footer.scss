@@ -1,0 +1,28 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $bg-black;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__nav .main-nav__list {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  width: 132px;
+}
+
+.page-footer__social .social__icon {
+  fill: #F5F5F5;
+}
+
+.page-footer__social .social__item {
+  border: none;
+}

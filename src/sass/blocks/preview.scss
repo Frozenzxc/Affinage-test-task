@@ -1,0 +1,52 @@
+.preview {
+  position: relative;
+  padding-top: 38px;
+  padding-bottom: 185px;
+  background-color: $bg-black;
+}
+
+.preview__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__title {
+  order: 2;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 44px;
+  color: $font-white;
+}
+
+.preview__dates {
+  order: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-white;
+}
+
+.preview__text {
+  order: 3;
+  margin: 0;
+  line-height: 29px;
+  font-weight: 200;
+  color: $font-white;
+}
+
+.preview__logo {
+  display: none;
+}
+
+.preview__img {
+  position: absolute;
+  bottom: 0;
+}

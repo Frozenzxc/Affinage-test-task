@@ -1,0 +1,61 @@
+.museums {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.museums__title {
+  margin-bottom: 40px;
+}
+
+.museums__map {
+  margin-bottom: 40px;
+}
+
+.museums__list {
+  @include list-reset();
+}
+
+.museums__item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.museums__item:last-child {
+  border: none;
+}
+
+.museums__item-wrapper {
+  padding: 40px 40px 40px 25px;
+}
+
+.museums__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 30px;
+}
+
+.museums__item-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  left: 0;
+  top: 5px;
+  background: url("../img/marker.svg") center no-repeat;
+}
+
+.museums__item-address,
+.museums__item-tel {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-grey;
+}

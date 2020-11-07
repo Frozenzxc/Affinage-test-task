@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rambler test task</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none;">
+  <include src="build/img/sprite/sprite.svg"></include>
+</div>
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <nav class="page-header__nav main-nav">
+      <input type="checkbox" class="main-nav__search-toggle" id="main-nav__search-toggle"/>
+      <label class="main-nav__search-trigger" for="main-nav__search-toggle">
+        <svg class="main-nav__search-icon" x="0px" y="0px" width="18px" height="18px">
+          <use xlink:href="#loop"></use>
+        </svg>
+      </label>
+      <form class="main-nav__search-form" id="main-nav__search-form" action="POST">
+        <input type="search" class="main-nav__search" id="main-nav__search" placeholder="Введите запрос">
+        <label class="visually-hidden" for="main-nav__search">Поиск по сайту</label>
+        <button type="submit" class="main-nav__search-submit" form="main-nav__search-form">Найти</button>
+      </form>
+      <input type="checkbox" class="main-nav__toggle" id="main-nav__toggle"/>
+      <label class="main-nav__toggle-trigger" for="main-nav__toggle"></label>
+      <label class="main-nav__toggle-burger" for="main-nav__toggle"></label>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#biography">Биография</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#creation">Творчество</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#pictures">Катрины</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#museums">Музеи</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Сайт посвященный творчеству Бориса Кустодиева</h1>
+    <section class="preview">
+      <div class="preview__wrapper">
+        <h2 class="preview__title title">Борис Кустодиев</h2>
+        <p class="preview__dates">1878-1927</p>
+        <p class="preview__text">
+          Художник, запечатлевший на своих ярких и жизнерадостных полотнах сцены русских будней и праздников. Обладал редким безграничным талантом, которому, в первую очередь, было присуще особое чувство и восприятие родной природы.
+        </p>
+
+        <span class="preview__logo">Логотип AFFINAGE</span>
+      </div>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/main-picture-desktop@1x.jpg 1x, img/main-picture-desktop@2x.jpg 2x">
+        <img class="preview__img" src="img/main-picture-mobile@1x.jpg" srcset="img/main-picture-mobile@2x.jpg 2x" width="320" height="125" alt="Картина Осень в провинции. Чаепитие">
+      </picture>
+    </section>
+    <section class="biography container" id="biography">
+      <h2 class="biography__title title">Биография</h2>
+      <p class="biography__about">
+        Борис Кустодиев родился 7 марта 1878 года в Астрахани. Отца, преподавателя духовной семинарии, не стало, когда мальчику было чуть больше года. Мать осталась вдовой в 25 лет
+        и содержала четверых детей.
+      </p>
+      <ul class="biography__list">
+        <li class="biography__item">
+          <h3 class="biography__date">1887</h3>
+          <p class="biography__text">
+            Борис сначала учился в церковно-приходской школе, потом
+            в гимназии. Когда ему было девять лет, в город привезли выставку художников-передвижников. Мальчика настолько впечатлила живопись, что он твердо решил научиться рисовать так же искусно. Мать нашла деньги, чтобы Борис смог брать уроки у известного в Астрахани художника Павла Власова.
+          </p>
+        </li>
+        <li class="biography__item">
+          <h3 class="biography__date">1896</h3>
+          <p class="biography__text">
+            Окончив семинарию, в 1896 году Кустодиев отправился учиться в Москву, но в художественную школу его не приняли: Борису уже исполнилось 18 и он был слишком взрослым. Тогда Кустодиев поехал в Петербург, где подал документы
+            в Высшее художественное училище при Академии художеств.
+          </p>
+        </li>
+      </ul>
+      <a class="biography__more btn-more" href="#">Читать больше</a>
+      <ul class="biography__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
+              <use xlink:href="#vk-logo"></use>
+            </svg>
+            <span class="social__likes">105</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
+              <use xlink:href="#twitter-logo"></use>
+            </svg>
+            <span class="social__likes">96</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
+              <use xlink:href="#fb-logo"></use>
+            </svg>
+            <span class="social__likes"></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="pictures" id="pictures">
+      <h2 class="visually-hidden">Картины</h2>
+      <ul class="pictures__pagination">
+        <li class="pictures__pagination-item">Картина №1</li>
+        <li class="pictures__pagination-item">Картина №2</li>
+        <li class="pictures__pagination-item">Картина №3</li>
+        <li class="pictures__pagination-item">Картина №4</li>
+        <li class="pictures__pagination-item">Картина №5</li>
+        <li class="pictures__pagination-item">Картина №6</li>
+        <li class="pictures__pagination-item">Картина №7</li>
+        <li class="pictures__pagination-item">Картина №8</li>
+        <li class="pictures__pagination-item">Картина №9</li>
+        <li class="pictures__pagination-item">Картина №10</li>
+      </ul>
+      <ul class="pictures__list">
+        <li class="pictures__item pictures__item--active">
+          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 1</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>
+        <li class="pictures__item pictures__item--next">
+          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 2</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>
+        <li class="pictures__item  pictures__item">
+          <h3 class="pictures__item-title">Осень в . Чаепитие 3</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>
+        <li class="pictures__item">
+          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 4</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>
+        <li class="pictures__item">
+          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 5</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>
+        <li class="pictures__item">
+          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 6</h3>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+          </picture>
+        </li>        <li class="pictures__item">
+        <h3 class="pictures__item-title">Осень в провинции. Чаепитие 7</h3>
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+          <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+        </picture>
+        </li>
+      </ul>
+      <a class="pictures__more" href="#">Все картины</a>
+      <div class="pictures__nav-wrapper">
+        <button class="pictures__nav-button pictures__nav-button--prev" type="button">Предыдущий</button>
+        <button class="pictures__nav-button performers__nav-button--next" type="button">Следующий</button>
+      </div>
+      <span class="pictures__nav-counter">
+        <span class="pictures__nav-counter-current">1</span>
+         /
+        <span class="pictures__nav-counter-all">10</span>
+      </span>
+    </section>
+    <section class="creation container" id="creation">
+      <h2 class="creation__title title">Творчество</h2>
+      <p class="creation__epigraph">
+        Трудно найти другого живописца, настолько
+        горячо влюбленного в провинциальную Россию: самобытную, яркую, удивляющую.
+      </p>
+      <p class="creation__text">
+        Как и большинство работ автора, пейзажные полотна Кустодиева отличаются особой выразительностью, яркостью и насыщенностью цветовых планов.
+        На картинах Кустодиева природа всегда представляет собой нечто гораздо большее, чем просто пейзажное изображение.
+      </p>
+      <img class="creation__img creation__img--small" src="img/creation-1-mobile.jpg" width="280" height="173" alt="картина">
+      <img class="creation__img creation__img--big" src="img/creation-2-mobile.jpg" width="280" height="204" alt="картина">
+      <p class="creation__text">
+        Особенности творчества художника Бориса Кустодиева: любил жанр портрета-картины, когда характер героя раскрывается через окружающий его пейзаж, интерьер или даже служащую фоном жанровую сцену; не жалел для бытовых сцен декоративности и зрелищности;
+        с большой симпатией писал жизнь провинции.
+      </p>
+      <p class="creation__text">
+        Даже в самые беспросветные времена полотна Кустодиева лучились здоровьем, радостью и любовью
+        к жизни. Сахарные сугробы и плавящиеся под солнцем купола. Полыхающие арбузы и красавицы,
+        не уступающие арбузам ни интенсивностью румянца,
+        ни гладкой округлостью форм.
+      </p>
+      <a class="creation__more btn-more" href="#">Читать больше</a>
+      <ul class="creation__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
+              <use xlink:href="#vk-logo"></use>
+            </svg>
+            <span class="social__likes">105</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
+              <use xlink:href="#twitter-logo"></use>
+            </svg>
+            <span class="social__likes">96</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
+              <use xlink:href="#fb-logo"></use>
+            </svg>
+            <span class="social__likes"></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="museums" id="museums">
+      <h2 class="museums__title title">Музеи</h2>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <img class="museums__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="514" alt="Картина Осень в провинции. Чаепитие">
+      </picture>
+      <ul class="museums__list">
+        <li class="museums__item">
+          <div class="museums__item-wrapper">
+            <h3 class="museums__item-title">Русский музей</h3>
+            <p class="museums__item-address">
+              191186, Санкт-Петербург,
+              Инженерная ул., 4,
+            </p>
+            <p class="museums__item-tel">
+              +7 (812) 595-42-40
+            </p>
+          </div>
+        </li>
+        <li class="museums__item">
+          <div class="museums__item-wrapper">
+            <h3 class="museums__item-title">Третьяковская галерея</h3>
+            <p class="museums__item-address">
+              119017, Москва, Лаврушинский переулок,10
+            </p>
+            <p class="museums__item-tel">
+              +7 (495) 957-07-27
+            </p>
+          </div>
+        </li>
+        <li class="museums__item">
+          <div class="museums__item-wrapper">
+            <h3 class="museums__item-title">Мультимедиа Арт Музей</h3>
+            <p class="museums__item-address">
+              105064, Москва,
+              Гороховский переулок, 7
+            </p>
+            <p class="museums__item-tel">
+              +7 (495) 632–16–81
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <nav class="page-footer__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#biography">Биография</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#creation">Творчество</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#pictures">Катрины</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#museums">Музеи</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
+              <use xlink:href="#vk-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
+              <use xlink:href="#twitter-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
+              <use xlink:href="#fb-logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
