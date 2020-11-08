@@ -37,17 +37,17 @@
 }
 
 .pictures__item--active {
-  left: 60px;
+  left: calc(50% - 100px);
   display: flex;
 }
 
 .pictures__item--prev {
-  left: -180px;
+  left: calc(50% - 320px);
   display: flex;
 }
 
 .pictures__item--next {
-  left: 300px;
+  left: calc(50% + 120px);
   display: flex;
 }
 

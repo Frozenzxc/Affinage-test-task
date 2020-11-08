@@ -49,6 +49,7 @@
 .preview__img {
   position: absolute;
   bottom: 0;
+  left: calc(50% - 160px);
 }
 
 @media (min-width: 768px) {
@@ -56,6 +57,10 @@
     width: 768px;
     padding-left: 370px;
     padding-right: 50px;
+  }
+
+  .preview__img {
+    left: 0;
   }
 
   .preview__logo {
