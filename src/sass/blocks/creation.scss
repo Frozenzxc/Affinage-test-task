@@ -1,7 +1,7 @@
 .creation {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 62px;
+  padding-bottom: 58px;
 }
 
 .creation::before {
@@ -21,7 +21,7 @@
 
 .creation__epigraph {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
   font-size: 20px;
   line-height: 30px;
   color: $font-grey;
@@ -29,21 +29,143 @@
 
 .creation__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .creation__img {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .creation__img--small {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .creation__img--big {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .creation__more {
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .creation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .creation::before {
+    top: 190px;
+  }
+
+  .creation__title {
+    width: 100%;
+  }
+
+  .creation__epigraph {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .creation__text {
+    width: 100%;
+  }
+
+  .creation__img {
+    display: block;
+    width: 48%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .creation__social {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .creation__title {
+    order: 1;
+    width: 25%;
+    margin-right: 63px;
+    margin-bottom: 0;
+  }
+
+  .creation__epigraph {
+    order: 2;
+    width: 50%;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+
+  .creation__text {
+    order: 6;
+    width: 48%;
+  }
+
+  .creation__epigraph + .creation__text {
+    order: 3;
+    margin-left: 80px;
+    margin-right: 115px;
+    margin-bottom: 30px;
+    width: 44%;
+  }
+
+  .creation__img--small {
+    order: 4;
+    width: 240px;
+    min-height: 172px;
+    margin-right: auto;
+  }
+
+  .creation picture {
+    order: 5;
+  }
+
+  .creation__img--big {
+    order: 5;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 19px;
+  }
+
+  .creation__social {
+    order: 7;
+    width: 30%;
+    align-self: center;
+  }
+
+  .creation__more {
+    order: 8;
+  }
+}
+
+@media (min-width: 1440px) {
+  .creation {
+    padding-top: 102px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .creation::before {
+    top: 230px;
+  }
+
+  .creation__title {
+    margin-right: 91px;
+  }
+
+  .creation__text {
+    margin-bottom: 52px;
+  }
+
+  .creation__social {
+    width: 33%;
+  }
+
+  .creation__more {
+    margin-bottom: 0;
+    margin-left: 175px;
+    margin-right: auto;
+  }
 }

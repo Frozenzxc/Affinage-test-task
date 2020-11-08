@@ -1,6 +1,6 @@
 .preview {
   position: relative;
-  padding-top: 38px;
+  padding-top: 28px;
   padding-bottom: 185px;
   background-color: $bg-black;
 }
@@ -26,7 +26,7 @@
 .preview__dates {
   order: 1;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   font-family: "Yeseva One", Arial, sans-serif;
   font-size: 20px;
   line-height: 18px;
@@ -49,4 +49,86 @@
 .preview__img {
   position: absolute;
   bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .preview__wrapper {
+    width: 768px;
+    padding-left: 370px;
+    padding-right: 50px;
+  }
+
+  .preview__logo {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background: url("../img/logo.svg") center no-repeat;
+  }
+}
+
+@media (min-width: 1024px) {
+  .preview {
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+  .preview__wrapper {
+    width: 920px;
+    padding-left: 450px;
+  }
+
+  .preview__title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .preview__dates {
+    font-size: 64px;
+    line-height: 59px;
+    position: absolute;
+    top: 125px;
+    left: 236px;
+    transform: rotate(270deg);
+  }
+
+  .preview__img {
+    top: 0;
+    height: 100vh;
+  }
+
+  .preview__logo {
+    right: 34px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .preview {
+    padding-top: 247px;
+    min-height: 600px;
+  }
+
+  .preview__wrapper {
+    padding-left: 400px;
+  }
+
+  .preview__title {
+    margin-bottom: 31px;
+  }
+
+  .preview__dates {
+    left: 161px;
+  }
+
+  .preview__img {
+    width: 460px;
+  }
+
+  .preview__logo {
+    right: 100px;
+    bottom: 40px;
+  }
 }

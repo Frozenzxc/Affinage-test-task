@@ -1,12 +1,13 @@
 .btn-more {
   display: block;
-  max-width: 120px;
+  width: 120px;
   position: relative;
   font-size: 14px;
   line-height: 40px;
   font-weight: 600;
   color: $font-black;
   border-bottom: 2px solid $bg-black;
+  text-transform: lowercase;
 
   &:hover, &:focus {
     opacity: 0.7;

@@ -12,3 +12,32 @@
   padding-right: 20px;
 }
 
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header__wrapper {
+    width: 100%;
+    padding: 0;
+    padding-right: 20px;
+  }
+
+  .page-header {
+    width: 600px;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    left: 36%;
+    width: 920px;
+  }
+}

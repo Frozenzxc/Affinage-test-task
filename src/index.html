@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rambler test task</title>
+  <title>AFFINAGE test task</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div style="display: none;">
-  <include src="build/img/sprite/sprite.svg"></include>
+  <include src="docs/img/sprite/sprite.svg"></include>
 </div>
 <header class="page-header">
   <div class="page-header__wrapper">
@@ -36,7 +36,7 @@
           <a class="main-nav__link" href="#creation">Творчество</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#pictures">Катрины</a>
+          <a class="main-nav__link" href="#pictures">Картины</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#museums">Музеи</a>
@@ -54,13 +54,13 @@
         <p class="preview__text">
           Художник, запечатлевший на своих ярких и жизнерадостных полотнах сцены русских будней и праздников. Обладал редким безграничным талантом, которому, в первую очередь, было присуще особое чувство и восприятие родной природы.
         </p>
-
-        <span class="preview__logo">Логотип AFFINAGE</span>
       </div>
       <picture>
         <source media="(min-width: 1024px)" srcset="img/main-picture-desktop@1x.jpg 1x, img/main-picture-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/main-picture-desktop@1x.jpg 1x, img/main-picture-desktop@2x.jpg 2x">
         <img class="preview__img" src="img/main-picture-mobile@1x.jpg" srcset="img/main-picture-mobile@2x.jpg 2x" width="320" height="125" alt="Картина Осень в провинции. Чаепитие">
       </picture>
+      <span class="preview__logo">Логотип AFFINAGE</span>
     </section>
     <section class="biography container" id="biography">
       <h2 class="biography__title title">Биография</h2>
@@ -87,7 +87,7 @@
       <a class="biography__more btn-more" href="#">Читать больше</a>
       <ul class="biography__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
+          <a class="social__link social__link--vk" href="https://vk.com"  target="_blank">
           <span class="visually-hidden">Мы в Вконтакте</span>
             <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
               <use xlink:href="#vk-logo"></use>
@@ -96,7 +96,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
           <span class="visually-hidden">Мы в Твиттере</span>
             <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
               <use xlink:href="#twitter-logo"></use>
@@ -105,7 +105,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#">
+          <a class="social__link social__link--fb" href="https://facebook.com" target="_blank">
           <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
               <use xlink:href="#fb-logo"></use>
@@ -116,79 +116,86 @@
       </ul>
     </section>
     <section class="pictures" id="pictures">
-      <h2 class="visually-hidden">Картины</h2>
-      <ul class="pictures__pagination">
-        <li class="pictures__pagination-item">Картина №1</li>
-        <li class="pictures__pagination-item">Картина №2</li>
-        <li class="pictures__pagination-item">Картина №3</li>
-        <li class="pictures__pagination-item">Картина №4</li>
-        <li class="pictures__pagination-item">Картина №5</li>
-        <li class="pictures__pagination-item">Картина №6</li>
-        <li class="pictures__pagination-item">Картина №7</li>
-        <li class="pictures__pagination-item">Картина №8</li>
-        <li class="pictures__pagination-item">Картина №9</li>
-        <li class="pictures__pagination-item">Картина №10</li>
-      </ul>
-      <ul class="pictures__list">
-        <li class="pictures__item pictures__item--active">
-          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 1</h3>
+      <div class="pictures__wrapper">
+        <h2 class="visually-hidden">Картины</h2>
+        <ul class="pictures__pagination">
+          <li class="pictures__pagination-item pictures__pagination-item--visible pictures__pagination-item--active" data-id="0">
+            <img src="img/pagination-1.jpg" width="120" height="90" alt="Картина Купчиха за чаем">
+          </li>
+          <li class="pictures__pagination-item pictures__pagination-item--visible" data-id="1">
+            <img src="img/pagination-2.jpg" width="120" height="90" alt="Картина Купчихи">
+          </li>
+          <li class="pictures__pagination-item pictures__pagination-item--visible" data-id="2">
+            <img src="img/pagination-3.jpg" width="120" height="90" alt="Картина Деревенский праздник">
+          </li>
+          <li class="pictures__pagination-item pictures__pagination-item--visible" data-id="3">
+            <img src="img/pagination-4.jpg" width="120" height="90" alt="Картина Масленица">
+          </li>
+          <li class="pictures__pagination-item pictures__pagination-item--visible" data-id="4">
+            <img src="img/pagination-5.jpg" width="120" height="90" alt="Картина Осень в провинции. Чаепитие">
+          </li>
+          <li class="pictures__pagination-item"  data-id="5">
+            <img src="img/slide-6.webp" width="120" height="90" alt="Картина Московский трактир">
+          </li>
+          <li class="pictures__pagination-item"  data-id="6">
+            <img src="img/slide-7.webp" width="120" height="90" alt="Картина Чаепитие">
+          </li>
+        </ul>
+        <ul class="pictures__list">
+          <li class="pictures__item pictures__item--active">
+            <h3 class="pictures__item-title">Купчиха за чаем</h3>
+            <picture>
+              <img class="pictures__item-img" src="img/slide-1.webp" width="200" height="156" alt="Картина Купчиха за чаем">
+            </picture>
+          </li>
+          <li class="pictures__item pictures__item--next">
+            <h3 class="pictures__item-title">Купчихи</h3>
+            <picture>
+              <img class="pictures__item-img" src="img/slide-2.webp" width="200" height="156" alt="Картина Купчихи">
+            </picture>
+          </li>
+          <li class="pictures__item">
+            <h3 class="pictures__item-title">Деревенский праздник</h3>
+            <picture>
+              <img class="pictures__item-img" src="img/slide-3.webp" width="200" height="156" alt="Картина Деревенский праздник">
+            </picture>
+          </li>
+          <li class="pictures__item">
+            <h3 class="pictures__item-title">Масленица</h3>
+            <picture>
+              <img class="pictures__item-img" src="img/slide-4.webp" width="200" height="156" alt="Картина Масленица">
+            </picture>
+          </li>
+          <li class="pictures__item">
+            <h3 class="pictures__item-title">Осень в провинции. Чаепитие</h3>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
+              <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+            </picture>
+          </li>
+          <li class="pictures__item">
+            <h3 class="pictures__item-title">Московский трактир</h3>
+            <picture>
+              <img class="pictures__item-img" src="img/slide-6.webp" width="200" height="156" alt="Картина Московский трактир">
+            </picture>
+          </li>        <li class="pictures__item">
+          <h3 class="pictures__item-title">Чаепитие</h3>
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
+            <img class="pictures__item-img" src="img/slide-7.webp" width="200" height="156" alt="Чаепитие">
           </picture>
-        </li>
-        <li class="pictures__item pictures__item--next">
-          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 2</h3>
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-          </picture>
-        </li>
-        <li class="pictures__item  pictures__item">
-          <h3 class="pictures__item-title">Осень в . Чаепитие 3</h3>
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-          </picture>
-        </li>
-        <li class="pictures__item">
-          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 4</h3>
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-          </picture>
-        </li>
-        <li class="pictures__item">
-          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 5</h3>
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-          </picture>
-        </li>
-        <li class="pictures__item">
-          <h3 class="pictures__item-title">Осень в провинции. Чаепитие 6</h3>
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-            <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-          </picture>
-        </li>        <li class="pictures__item">
-        <h3 class="pictures__item-title">Осень в провинции. Чаепитие 7</h3>
-        <picture>
-          <source media="(min-width: 1024px)" srcset="img/slide-5-desktop@1x.jpg 1x, img/slide-5-desktop@2x.jpg 2x">
-          <img class="pictures__item-img" src="img/slide-5-mobile@1x.jpg" srcset="img/slide-5-mobile@2x.jpg 2x" width="200" height="156" alt="Картина Осень в провинции. Чаепитие">
-        </picture>
-        </li>
-      </ul>
-      <a class="pictures__more" href="#">Все картины</a>
-      <div class="pictures__nav-wrapper">
-        <button class="pictures__nav-button pictures__nav-button--prev" type="button">Предыдущий</button>
-        <button class="pictures__nav-button performers__nav-button--next" type="button">Следующий</button>
+          </li>
+        </ul>
+        <a class="pictures__more" href="#">Все картины</a>
+        <div class="pictures__nav-wrapper">
+          <button class="pictures__nav-button pictures__nav-button--prev" type="button">Предыдущий</button>
+          <button class="pictures__nav-button pictures__nav-button--next" type="button">Следующий</button>
+        </div>
+        <span class="pictures__nav-counter">
+          <span class="pictures__nav-counter-current">1</span>
+           /
+          <span class="pictures__nav-counter-all">10</span>
+        </span>
       </div>
-      <span class="pictures__nav-counter">
-        <span class="pictures__nav-counter-current">1</span>
-         /
-        <span class="pictures__nav-counter-all">10</span>
-      </span>
     </section>
     <section class="creation container" id="creation">
       <h2 class="creation__title title">Творчество</h2>
@@ -197,11 +204,14 @@
         горячо влюбленного в провинциальную Россию: самобытную, яркую, удивляющую.
       </p>
       <p class="creation__text">
-        Как и большинство работ автора, пейзажные полотна Кустодиева отличаются особой выразительностью, яркостью и насыщенностью цветовых планов.
-        На картинах Кустодиева природа всегда представляет собой нечто гораздо большее, чем просто пейзажное изображение.
+        Как и большинство работ автора, пейзажные полотна Кустодиева отличаются особой яркостью
+        и насыщенностью цветовых планов. На картинах Кустодиева природа всегда представляет собой нечто гораздо большее, чем просто пейзажное изображение.
       </p>
-      <img class="creation__img creation__img--small" src="img/creation-1-mobile.jpg" width="280" height="173" alt="картина">
-      <img class="creation__img creation__img--big" src="img/creation-2-mobile.jpg" width="280" height="204" alt="картина">
+      <img class="creation__img creation__img--small" src="img/creation-1-mobile.jpg" width="280" height="173" alt="Картина Осень">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/creation-2-desktop.jpg">
+        <img class="creation__img creation__img--big" src="img/creation-2-mobile.jpg" width="280" height="204" alt="Картина Осеннее гулянье">
+      </picture>
       <p class="creation__text">
         Особенности творчества художника Бориса Кустодиева: любил жанр портрета-картины, когда характер героя раскрывается через окружающий его пейзаж, интерьер или даже служащую фоном жанровую сцену; не жалел для бытовых сцен декоративности и зрелищности;
         с большой симпатией писал жизнь провинции.
@@ -215,7 +225,7 @@
       <a class="creation__more btn-more" href="#">Читать больше</a>
       <ul class="creation__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
+          <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
             <span class="visually-hidden">Мы в Вконтакте</span>
             <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
               <use xlink:href="#vk-logo"></use>
@@ -224,7 +234,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
             <span class="visually-hidden">Мы в Твиттере</span>
             <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
               <use xlink:href="#twitter-logo"></use>
@@ -233,7 +243,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#">
+          <a class="social__link social__link--fb" href="https://facebook.com" target="_blank">
             <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
               <use xlink:href="#fb-logo"></use>
@@ -247,12 +257,17 @@
       <h2 class="museums__title title">Музеи</h2>
       <picture>
         <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-        <img class="museums__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="514" alt="Картина Осень в провинции. Чаепитие">
+        <source media="(min-width: 768px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <img class="museums__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="514" alt="Санкт-Петербург, Инженерная ул., 4, Русский музей">
       </picture>
       <ul class="museums__list">
         <li class="museums__item">
           <div class="museums__item-wrapper">
-            <h3 class="museums__item-title">Русский музей</h3>
+            <h3 class="museums__item-title">
+              <a href="https://www.rusmuseum.ru/" target="_blank">
+                Русский музей
+              </a>
+            </h3>
             <p class="museums__item-address">
               191186, Санкт-Петербург,
               Инженерная ул., 4,
@@ -264,7 +279,11 @@
         </li>
         <li class="museums__item">
           <div class="museums__item-wrapper">
-            <h3 class="museums__item-title">Третьяковская галерея</h3>
+            <h3 class="museums__item-title">
+              <a href="https://www.tretyakovgallery.ru/" target="_blank">
+                Третьяковская галерея
+              </a>
+            </h3>
             <p class="museums__item-address">
               119017, Москва, Лаврушинский переулок,10
             </p>
@@ -275,7 +294,11 @@
         </li>
         <li class="museums__item">
           <div class="museums__item-wrapper">
-            <h3 class="museums__item-title">Мультимедиа Арт Музей</h3>
+            <h3 class="museums__item-title">
+              <a href="http://mamm-mdf.ru/" target="_blank">
+                Мультимедиа Арт Музей
+              </a>
+            </h3>
             <p class="museums__item-address">
               105064, Москва,
               Гороховский переулок, 7
@@ -308,7 +331,7 @@
       </nav>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
+          <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
             <span class="visually-hidden">Мы в Вконтакте</span>
             <svg class="social__icon" x="0px" y="0px" width="24px" height="14px">
               <use xlink:href="#vk-logo"></use>
@@ -316,7 +339,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
             <span class="visually-hidden">Мы в Твиттере</span>
             <svg class="social__icon" x="0px" y="0px" width="20px" height="18px">
               <use xlink:href="#twitter-logo"></use>
@@ -324,7 +347,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#">
+          <a class="social__link social__link--fb" href="https://facebook.com" target="_blank">
             <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg class="social__icon" x="0px" y="0px" width="12px" height="22px">
               <use xlink:href="#fb-logo"></use>
